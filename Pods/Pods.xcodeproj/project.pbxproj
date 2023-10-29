@@ -1,0 +1,1885 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		057B453F4AE14D10EA77D38FA1A0B8FB /* SideMenuPresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B48012422CD95494840F4DC9FFA342B /* SideMenuPresentationController.swift */; };
+		09B92D5C327793BE561C647F32534872 /* CAGradientLayer+AHEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = 00322D1F5BECCE31D54CDC81FF5522F9 /* CAGradientLayer+AHEasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		148D6263869DE7044BFADFA14E5AB60E /* Pods-AnsungBarnMonTests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E9DF84141FBFE67AEEAC275807C152E6 /* Pods-AnsungBarnMonTests-dummy.m */; };
+		16D72F94EF122B76123EF386BFA41F28 /* UIColor-CrossFade-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = D9D3EC7FC7E3485FD864EA88B0463E00 /* UIColor-CrossFade-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1F0DDBBAF86A028D6D60A7E10B4D3634 /* SideMenu-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 716B5B65649665D8DFB848B34DD03EF5 /* SideMenu-dummy.m */; };
+		2172554650AF005D5013A727EBE27709 /* Pods-AnsungBarnMon-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DB8875ECBAC1FC83C72A65EFFE5CE60 /* Pods-AnsungBarnMon-dummy.m */; };
+		25B12FA4CE725789080EAE579D7E488C /* FadingEdgesCollectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 39D8D13BB4EDA24B6FE1FE99EF075006 /* FadingEdgesCollectionView.swift */; };
+		263A8433E6936FD6E52B37DBFAF30B66 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4878BD1948D1714148371B05696DAB2F /* QuartzCore.framework */; };
+		297B30A68547D5AE7E4C5CF5720DFDAA /* Pods-AnsungBarnMonTests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F63F00D4939C9F38C3978208F773AA4 /* Pods-AnsungBarnMonTests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		36D082E0B3543FA07C11C4A90672AC6C /* FadingEdgesCollectionView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = BA74511FABB172B91225D473D3BC07BA /* FadingEdgesCollectionView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3817F4830A10E51D20B72530EF6A56D2 /* SideMenuTransitionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3C7FE4EFB3B9883AFBD13898FF1219E /* SideMenuTransitionController.swift */; };
+		4298E40B036037EABFB07279A944B6F2 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4878BD1948D1714148371B05696DAB2F /* QuartzCore.framework */; };
+		454B1374729CD4021D3883D5F4CD5DA7 /* HTGradientEasing-Fixed-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 55DD6DA230135F81442026A629207F46 /* HTGradientEasing-Fixed-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4B6A5FF9C52C8AE7C79FC5AE5CAA9DC4 /* easing.c in Sources */ = {isa = PBXBuildFile; fileRef = 82549D90919FA84252E3235E35993923 /* easing.c */; };
+		4F1BAEB7088D456AA0A2ADE4E907E0FB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		5587C359D9C8789950E7F6585C2292E7 /* SideMenuPresentationStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0D7790E8F6320C771BA68C088D584606 /* SideMenuPresentationStyle.swift */; };
+		5C02A1378BFBD81D909535D4ABE9129E /* AHEasing-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 1FD5915D5DE7FD30217DAE0EB112FBF8 /* AHEasing-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5D5325DB2E6D0DC794779446D6D6A7F0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		60210E91A88CF94C20D2A22E419D4497 /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4878BD1948D1714148371B05696DAB2F /* QuartzCore.framework */; };
+		67DE255C410CC18838AE4841B1034E97 /* HTGradientEasing-Fixed-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 51D55AC4CF164291A7AC29ECC260C663 /* HTGradientEasing-Fixed-dummy.m */; };
+		74106BDED4B8B2281DFE4BE5E109D847 /* Initializable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0DDE269B8B94DAEFC94EA07A1C23D0E0 /* Initializable.swift */; };
+		750B533D563B1513B8420F45643A7BCD /* Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 15371CEEC1D71B86157831BED93D2A54 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		7BEF19546F7A440DAAFE13153282EEA0 /* UIButton+Closure.swift in Sources */ = {isa = PBXBuildFile; fileRef = 262DE7732D177003B64A6C762635B182 /* UIButton+Closure.swift */; };
+		829FACCEFFD3DF3DA678DF5440765B91 /* FadingEdgesCollectionView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 540CAFEDED15CDCD9311E8D6FD97CCC2 /* FadingEdgesCollectionView-dummy.m */; };
+		87D69916190DA2EF4F814C14E0E259F4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		887D7E546D6837CC964318D1B0C842D9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		90C0908665A3E08404A4D23485B10C47 /* Pods-AnsungBarnMon-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 04FA915D9A29B016194035B354A1FC79 /* Pods-AnsungBarnMon-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9E9F19E0120EA3C46967C28E637F52C8 /* SideMenuNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 55791F160770B7BA4C8591CAFA413C56 /* SideMenuNavigationController.swift */; };
+		A08CAA8D6DC42FF314904F3F5162EC64 /* AHEasing-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 71CD58D7F1FFFA5AD7A5D1E0191ABC7E /* AHEasing-dummy.m */; };
+		A279397EF0D9C9157CF5ADAD53F5FEFA /* UIColor-CrossFade-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 560AC5CFF7C3A0D0548551A1B81DB89E /* UIColor-CrossFade-dummy.m */; };
+		A484B6B38524E16DB4E8DF22EA56059D /* Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E4D5B6CE5D3BB9C43157F40CA0D9D03F /* Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m */; };
+		ACA86BBE8F135B81712F6DA3CD62BB88 /* easing.h in Headers */ = {isa = PBXBuildFile; fileRef = 4C0B436495A45EDC4AAD700893C03111 /* easing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AEDBEECCFD8BA89C53020586C6CCB8C5 /* CAKeyframeAnimation+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 7806686166DF81ADCBEDB1980DA40966 /* CAKeyframeAnimation+AHEasing.m */; };
+		B804587E525773FCA9698855B2C752DC /* SideMenuAnimationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4436A483788D3A397358FBC551754E4D /* SideMenuAnimationController.swift */; };
+		BC9C2E663681EDDBFE985034DCC7AAAF /* UITableViewVibrantCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27C9E65FF41E49D20E269EAA4B1C207B /* UITableViewVibrantCell.swift */; };
+		BD7485E08C2F6CB837BE341BEFA344DA /* StyleKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69CB6E8EF4122C9EAE9AC6AA9EB6ABBB /* StyleKit.swift */; };
+		BE79F903F87E7D5918C6414E6203743E /* Print.swift in Sources */ = {isa = PBXBuildFile; fileRef = D739A38E5503FD088E60175EF7E30884 /* Print.swift */; };
+		C30E5BDA69F08D912BF4DD29AE02A825 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		CFDADC5B59183580C79A9FBE2C8DBA9F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		D3BE0026C39E4B360BBDA0D5C57DD25D /* Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = C50FF4B91FE92E7184E4CBC39C87AB46 /* Deprecations.swift */; };
+		D3F0991BD11F214AE772B346B6458E79 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		D4C6144A2962FADF6DF3F04245167024 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */; };
+		DAD5950A205347FCDBD3751604472431 /* Protected.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1BA9322214F6BB3C28212CDB9FEC0CE /* Protected.swift */; };
+		DD25C3475CCF344984424BD06C4AA439 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 17E235F75DD77D76FF33E54BF765E5A7 /* CoreGraphics.framework */; };
+		E0378F044F1CABAA4B4E896EFB29301B /* UIColor+CrossFade.h in Headers */ = {isa = PBXBuildFile; fileRef = 347BA91334018DB7A0C8AF24D3A16422 /* UIColor+CrossFade.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E41321150B807EFDD331B2138765B52B /* UIColor+CrossFade.m in Sources */ = {isa = PBXBuildFile; fileRef = D6C84825BE2CA33B54ED2C1AD0F17716 /* UIColor+CrossFade.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E56EEF71CC5AF0DA40228F2CA67B4BA0 /* SideMenu-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9DC01FC480FC97258C66C54389B228 /* SideMenu-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E69FEA5B038C2BAD79C52D60C9C59679 /* CAGradientLayer+AHEasing.m in Sources */ = {isa = PBXBuildFile; fileRef = 81D294BA11AF9D548F0046FCC62C1FF5 /* CAGradientLayer+AHEasing.m */; settings = {COMPILER_FLAGS = "-DOS_OBJECT_USE_OBJC=0"; }; };
+		E709C98B763E8065628D8E88715E0BF8 /* SideMenuManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C9B079B5192809D69823D438BF20D6B /* SideMenuManager.swift */; };
+		E72252B09CC270B50217CA6AEABD620A /* SideMenuPushCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F03EA9A3B4BF4911279CED9940EC321 /* SideMenuPushCoordinator.swift */; };
+		E97C7A323474D0205E872AE7BC773650 /* SideMenuInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA43709C6A154DEE68F210AED03C963F /* SideMenuInteractionController.swift */; };
+		E9D295108CDA246F43886263CAC88C5F /* CAKeyframeAnimation+AHEasing.h in Headers */ = {isa = PBXBuildFile; fileRef = 28F20D2E68BD8A99B5AD8D15C9836775 /* CAKeyframeAnimation+AHEasing.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F28D439429A375B6D4FCD037ED317CD6 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 967347A87BBB3D298ECF90BDE2CD2B73 /* Extensions.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		02C4D6A1A5AC733E09117E40B7DE4BF1 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160B1A546E3B4B424D68E7EA85C674D6;
+			remoteInfo = "HTGradientEasing-Fixed";
+		};
+		0BD05CE0CBB4D30A211C28D648DBC6BF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACAC37713A98F013A2C6ED7D43982F54;
+			remoteInfo = FadingEdgesCollectionView;
+		};
+		11B149FF379368EAF1E00F1838AA0C95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD8261B4F3FEF151DC13DA1A3A41049;
+			remoteInfo = AHEasing;
+		};
+		3A72697D848F33EB9C5B523A6800A06D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817E9C368FDE1F9A6D9F0D579BDD0C19;
+			remoteInfo = "UIColor-CrossFade";
+		};
+		3DA6CA0BF7500627ACF370ECA2471FDE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = ACAC37713A98F013A2C6ED7D43982F54;
+			remoteInfo = FadingEdgesCollectionView;
+		};
+		43859C9E2127D4C236CF798B2E3AB02C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD8261B4F3FEF151DC13DA1A3A41049;
+			remoteInfo = AHEasing;
+		};
+		4481113A01E43E5CD47BBA89D1B74F78 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160B1A546E3B4B424D68E7EA85C674D6;
+			remoteInfo = "HTGradientEasing-Fixed";
+		};
+		48D92B2BB0119F2D5919F0DA64666CA5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
+			remoteInfo = SideMenu;
+		};
+		85180303BC3E8E982797E6E033758840 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817E9C368FDE1F9A6D9F0D579BDD0C19;
+			remoteInfo = "UIColor-CrossFade";
+		};
+		8F65181ECE69A9AB075047B6037A8254 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 160B1A546E3B4B424D68E7EA85C674D6;
+			remoteInfo = "HTGradientEasing-Fixed";
+		};
+		A2E2584B04D3914481C241766A746BA0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F3F425F89F2F153B5B717C641FC0169;
+			remoteInfo = "Pods-AnsungBarnMon";
+		};
+		BEBEE4DC87F396745DBFE4036E7170D7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 817E9C368FDE1F9A6D9F0D579BDD0C19;
+			remoteInfo = "UIColor-CrossFade";
+		};
+		C0AFE80CF9E59CC5804FF8AB9EB1CDCD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FBD8261B4F3FEF151DC13DA1A3A41049;
+			remoteInfo = AHEasing;
+		};
+		EE6B9769095CBF56B8AE99827607A8D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = C4A0A7D8591B67FB75E2E8D215E3735B;
+			remoteInfo = SideMenu;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		00322D1F5BECCE31D54CDC81FF5522F9 /* CAGradientLayer+AHEasing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CAGradientLayer+AHEasing.h"; sourceTree = "<group>"; };
+		0049D5289B0E9F8063C760F8D107F983 /* Pods_AnsungBarnMonTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnsungBarnMonTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		043D1C96795FA6C7158CE5FD271B4BA5 /* UIColor-CrossFade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-CrossFade.release.xcconfig"; sourceTree = "<group>"; };
+		04FA915D9A29B016194035B354A1FC79 /* Pods-AnsungBarnMon-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnsungBarnMon-umbrella.h"; sourceTree = "<group>"; };
+		0D7790E8F6320C771BA68C088D584606 /* SideMenuPresentationStyle.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationStyle.swift; path = Pod/Classes/SideMenuPresentationStyle.swift; sourceTree = "<group>"; };
+		0DDE269B8B94DAEFC94EA07A1C23D0E0 /* Initializable.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Initializable.swift; path = Pod/Classes/Initializable.swift; sourceTree = "<group>"; };
+		140C6719CD009A238E190EBD2DE25A2F /* AHEasing.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHEasing.release.xcconfig; sourceTree = "<group>"; };
+		15371CEEC1D71B86157831BED93D2A54 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h"; sourceTree = "<group>"; };
+		17E235F75DD77D76FF33E54BF765E5A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/CoreGraphics.framework; sourceTree = DEVELOPER_DIR; };
+		1B48012422CD95494840F4DC9FFA342B /* SideMenuPresentationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPresentationController.swift; path = Pod/Classes/SideMenuPresentationController.swift; sourceTree = "<group>"; };
+		1FD5915D5DE7FD30217DAE0EB112FBF8 /* AHEasing-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHEasing-umbrella.h"; sourceTree = "<group>"; };
+		20A4551CACE928A1B361A1BCB60852DD /* SideMenu.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.release.xcconfig; sourceTree = "<group>"; };
+		25785A486097BD75FA12958557E1F8B7 /* FadingEdgesCollectionView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = FadingEdgesCollectionView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		262DE7732D177003B64A6C762635B182 /* UIButton+Closure.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIButton+Closure.swift"; path = "FadingEdgesCollectionView/Lib/UIButton+Closure.swift"; sourceTree = "<group>"; };
+		27C9E65FF41E49D20E269EAA4B1C207B /* UITableViewVibrantCell.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UITableViewVibrantCell.swift; path = Pod/Classes/UITableViewVibrantCell.swift; sourceTree = "<group>"; };
+		28F20D2E68BD8A99B5AD8D15C9836775 /* CAKeyframeAnimation+AHEasing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CAKeyframeAnimation+AHEasing.h"; path = "AHEasing/CAKeyframeAnimation+AHEasing.h"; sourceTree = "<group>"; };
+		319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		33EB81896BCAB84492E6BE8BA28C7C7F /* Pods-AnsungBarnMon-AnsungBarnMonUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests.release.xcconfig"; sourceTree = "<group>"; };
+		3479F5C9E15340FF40059AEC4D783248 /* Pods-AnsungBarnMonTests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMonTests-acknowledgements.plist"; sourceTree = "<group>"; };
+		347BA91334018DB7A0C8AF24D3A16422 /* UIColor+CrossFade.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor+CrossFade.h"; sourceTree = "<group>"; };
+		34D68EFF9105BDA472B61C04F77BE7C3 /* UIColor-CrossFade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UIColor-CrossFade.debug.xcconfig"; sourceTree = "<group>"; };
+		382275B995717A9FC011BDE3D33B1CB4 /* AHEasing.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = AHEasing.modulemap; sourceTree = "<group>"; };
+		385A88122AEF504A65328282D5C7BA79 /* Pods-AnsungBarnMonTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMonTests.debug.xcconfig"; sourceTree = "<group>"; };
+		39D8D13BB4EDA24B6FE1FE99EF075006 /* FadingEdgesCollectionView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FadingEdgesCollectionView.swift; path = FadingEdgesCollectionView/Lib/FadingEdgesCollectionView.swift; sourceTree = "<group>"; };
+		3CC7BB71249BA617E08F23C6665AC734 /* HTGradientEasing-Fixed-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTGradientEasing-Fixed-prefix.pch"; sourceTree = "<group>"; };
+		3D04885437C287B7880BC7B06200D227 /* AHEasing.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = AHEasing.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3EBB1E80215A00F6C3F70909F6EB29B8 /* HTGradientEasing-Fixed-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "HTGradientEasing-Fixed-Info.plist"; sourceTree = "<group>"; };
+		3F03EA9A3B4BF4911279CED9940EC321 /* SideMenuPushCoordinator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuPushCoordinator.swift; path = Pod/Classes/SideMenuPushCoordinator.swift; sourceTree = "<group>"; };
+		3F63F00D4939C9F38C3978208F773AA4 /* Pods-AnsungBarnMonTests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-AnsungBarnMonTests-umbrella.h"; sourceTree = "<group>"; };
+		3F805F6DFE0A310840ADE5B6F91B443B /* Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.plist"; sourceTree = "<group>"; };
+		41E4B275F413576A323E28A1709E6E43 /* HTGradientEasing_Fixed.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HTGradientEasing_Fixed.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		41EFA8D4EFA0394F712E888C0C047EE8 /* Pods-AnsungBarnMon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMon.release.xcconfig"; sourceTree = "<group>"; };
+		4436A483788D3A397358FBC551754E4D /* SideMenuAnimationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuAnimationController.swift; path = Pod/Classes/SideMenuAnimationController.swift; sourceTree = "<group>"; };
+		464C84C4B6E3EDAF9B723EC130C1749A /* Pods-AnsungBarnMon-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMon-Info.plist"; sourceTree = "<group>"; };
+		4878BD1948D1714148371B05696DAB2F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
+		4C0B436495A45EDC4AAD700893C03111 /* easing.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = easing.h; path = AHEasing/easing.h; sourceTree = "<group>"; };
+		4C228D900190E07328AF09EEFDB3BD0B /* Pods-AnsungBarnMon-AnsungBarnMonUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB8875ECBAC1FC83C72A65EFFE5CE60 /* Pods-AnsungBarnMon-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnsungBarnMon-dummy.m"; sourceTree = "<group>"; };
+		4E66EBD78968A1408D4386A7CD97BED3 /* UIColor-CrossFade-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UIColor-CrossFade-Info.plist"; sourceTree = "<group>"; };
+		51D55AC4CF164291A7AC29ECC260C663 /* HTGradientEasing-Fixed-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "HTGradientEasing-Fixed-dummy.m"; sourceTree = "<group>"; };
+		540CAFEDED15CDCD9311E8D6FD97CCC2 /* FadingEdgesCollectionView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FadingEdgesCollectionView-dummy.m"; sourceTree = "<group>"; };
+		55791F160770B7BA4C8591CAFA413C56 /* SideMenuNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuNavigationController.swift; path = Pod/Classes/SideMenuNavigationController.swift; sourceTree = "<group>"; };
+		55BD81B34CC9DFD6C4B7EE7F6A03D8CD /* FadingEdgesCollectionView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "FadingEdgesCollectionView-Info.plist"; sourceTree = "<group>"; };
+		55DD6DA230135F81442026A629207F46 /* HTGradientEasing-Fixed-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "HTGradientEasing-Fixed-umbrella.h"; sourceTree = "<group>"; };
+		560AC5CFF7C3A0D0548551A1B81DB89E /* UIColor-CrossFade-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor-CrossFade-dummy.m"; sourceTree = "<group>"; };
+		5AA4878D77351924766E1F3D8B62FA49 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		5F569C143DE24003C3F8487BACECB50D /* FadingEdgesCollectionView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FadingEdgesCollectionView-prefix.pch"; sourceTree = "<group>"; };
+		62C7462EADAF8C25DA1F6047757CC4B2 /* HTGradientEasing-Fixed.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "HTGradientEasing-Fixed.modulemap"; sourceTree = "<group>"; };
+		6933AD45E796AEFB499D2FA7ECF76067 /* UIColor-CrossFade-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-CrossFade-prefix.pch"; sourceTree = "<group>"; };
+		69CB6E8EF4122C9EAE9AC6AA9EB6ABBB /* StyleKit.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StyleKit.swift; path = FadingEdgesCollectionView/Lib/StyleKit.swift; sourceTree = "<group>"; };
+		6AEAB006AEE69369E877EA399065471C /* SideMenu-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SideMenu-Info.plist"; sourceTree = "<group>"; };
+		6C3FAE844B94193AA7F3CE308DC134F5 /* FadingEdgesCollectionView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FadingEdgesCollectionView.debug.xcconfig; sourceTree = "<group>"; };
+		716B5B65649665D8DFB848B34DD03EF5 /* SideMenu-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SideMenu-dummy.m"; sourceTree = "<group>"; };
+		71CD58D7F1FFFA5AD7A5D1E0191ABC7E /* AHEasing-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "AHEasing-dummy.m"; sourceTree = "<group>"; };
+		7806686166DF81ADCBEDB1980DA40966 /* CAKeyframeAnimation+AHEasing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CAKeyframeAnimation+AHEasing.m"; path = "AHEasing/CAKeyframeAnimation+AHEasing.m"; sourceTree = "<group>"; };
+		81D294BA11AF9D548F0046FCC62C1FF5 /* CAGradientLayer+AHEasing.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "CAGradientLayer+AHEasing.m"; sourceTree = "<group>"; };
+		82549D90919FA84252E3235E35993923 /* easing.c */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.c; name = easing.c; path = AHEasing/easing.c; sourceTree = "<group>"; };
+		83D64E51D3E242A6ABB7A61FD73F99D2 /* FadingEdgesCollectionView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FadingEdgesCollectionView.release.xcconfig; sourceTree = "<group>"; };
+		8ADB6C85C24BB0CAFC34D8DB9386BFE0 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-frameworks.sh"; sourceTree = "<group>"; };
+		8C33263EE678EF4583469EF4419A85A8 /* Pods-AnsungBarnMonTests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnsungBarnMonTests.modulemap"; sourceTree = "<group>"; };
+		8C9B079B5192809D69823D438BF20D6B /* SideMenuManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuManager.swift; path = Pod/Classes/SideMenuManager.swift; sourceTree = "<group>"; };
+		932B49E64CE849E30F5BB106DC8339B5 /* SideMenu.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SideMenu.debug.xcconfig; sourceTree = "<group>"; };
+		967347A87BBB3D298ECF90BDE2CD2B73 /* Extensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Extensions.swift; path = Pod/Classes/Extensions.swift; sourceTree = "<group>"; };
+		9B33F1B3409075A1C2E466FA0DBB5CFC /* Pods-AnsungBarnMonTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMonTests-Info.plist"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1BA9322214F6BB3C28212CDB9FEC0CE /* Protected.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Protected.swift; path = Pod/Classes/Protected.swift; sourceTree = "<group>"; };
+		A4FEC525F41454B847645CCE035C072D /* HTGradientEasing-Fixed.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HTGradientEasing-Fixed.debug.xcconfig"; sourceTree = "<group>"; };
+		ABBF1C3A4F4C78983A581F7DB4F1A266 /* Pods-AnsungBarnMon-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnsungBarnMon-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD88D3BF2F73FA312F3CFCE51DF254F4 /* Pods-AnsungBarnMon.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnsungBarnMon.modulemap"; sourceTree = "<group>"; };
+		B36522925CC1045286EE71A28624923A /* SideMenu.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = SideMenu.modulemap; sourceTree = "<group>"; };
+		B369A22890934E6C3A51303B54EEBF41 /* Pods-AnsungBarnMon-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-AnsungBarnMon-frameworks.sh"; sourceTree = "<group>"; };
+		B39D180C9126C83274FF185B3D84EB55 /* Pods_AnsungBarnMon_AnsungBarnMonUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnsungBarnMon_AnsungBarnMonUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3E8C44BF69C64C7C7D4BD941AFD0D1B /* Pods-AnsungBarnMon-AnsungBarnMonUITests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-Info.plist"; sourceTree = "<group>"; };
+		B7C508929405F42B87FA95D87AF06F30 /* FadingEdgesCollectionView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = FadingEdgesCollectionView.modulemap; sourceTree = "<group>"; };
+		B84C67574BCDF03F42D7370715283CCE /* Pods-AnsungBarnMonTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMonTests.release.xcconfig"; sourceTree = "<group>"; };
+		BA74511FABB172B91225D473D3BC07BA /* FadingEdgesCollectionView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FadingEdgesCollectionView-umbrella.h"; sourceTree = "<group>"; };
+		BAFFD86860212B7EB18F38348FDC746A /* Pods-AnsungBarnMon-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-AnsungBarnMon-acknowledgements.plist"; sourceTree = "<group>"; };
+		C0D92DBD1C1CF70C407F9A3E257EE37A /* Pods-AnsungBarnMon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-AnsungBarnMon.debug.xcconfig"; sourceTree = "<group>"; };
+		C50FF4B91FE92E7184E4CBC39C87AB46 /* Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Deprecations.swift; path = Pod/Classes/Deprecations.swift; sourceTree = "<group>"; };
+		CD9DC01FC480FC97258C66C54389B228 /* SideMenu-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-umbrella.h"; sourceTree = "<group>"; };
+		CF0712A71C0B239F0F2748D3C04E771E /* AHEasing-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "AHEasing-Info.plist"; sourceTree = "<group>"; };
+		D40D7ECAA814230A49A26BEF515CAEAB /* AHEasing.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = AHEasing.debug.xcconfig; sourceTree = "<group>"; };
+		D6C84825BE2CA33B54ED2C1AD0F17716 /* UIColor+CrossFade.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CrossFade.m"; sourceTree = "<group>"; };
+		D739A38E5503FD088E60175EF7E30884 /* Print.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Print.swift; path = Pod/Classes/Print.swift; sourceTree = "<group>"; };
+		D7D4022B8014F4540C4E85D8992C3CAE /* UIColor-CrossFade.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "UIColor-CrossFade.modulemap"; sourceTree = "<group>"; };
+		D9D3EC7FC7E3485FD864EA88B0463E00 /* UIColor-CrossFade-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UIColor-CrossFade-umbrella.h"; sourceTree = "<group>"; };
+		E3A78201D11347C8019CA458256A4BCA /* SideMenu-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SideMenu-prefix.pch"; sourceTree = "<group>"; };
+		E4D5B6CE5D3BB9C43157F40CA0D9D03F /* Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m"; sourceTree = "<group>"; };
+		E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E9DF84141FBFE67AEEAC275807C152E6 /* Pods-AnsungBarnMonTests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-AnsungBarnMonTests-dummy.m"; sourceTree = "<group>"; };
+		EA85C7D1014B4B8200CD36867C2A2F9C /* AHEasing-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "AHEasing-prefix.pch"; sourceTree = "<group>"; };
+		F3C7FE4EFB3B9883AFBD13898FF1219E /* SideMenuTransitionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuTransitionController.swift; path = Pod/Classes/SideMenuTransitionController.swift; sourceTree = "<group>"; };
+		F5B6DF6E697EBFBE4E9E8FF07F37AA43 /* UIColor_CrossFade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UIColor_CrossFade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FA43709C6A154DEE68F210AED03C963F /* SideMenuInteractionController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SideMenuInteractionController.swift; path = Pod/Classes/SideMenuInteractionController.swift; sourceTree = "<group>"; };
+		FC2C8B762BA332367EF44AED752C4ED8 /* Pods-AnsungBarnMonTests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-AnsungBarnMonTests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		FD586AC9F7C69EC6B916B590A89981D5 /* Pods_AnsungBarnMon.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AnsungBarnMon.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		FDD2048CD226142927230BDF92CBD169 /* Pods-AnsungBarnMon-AnsungBarnMonUITests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-AnsungBarnMon-AnsungBarnMonUITests.modulemap"; sourceTree = "<group>"; };
+		FF09B86DD781288939216B8ED8341393 /* HTGradientEasing-Fixed.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "HTGradientEasing-Fixed.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A1CB2868B10C02507E2FB99960F80D1 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CFDADC5B59183580C79A9FBE2C8DBA9F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1BC244534746BB20AEF0FF299BB3F667 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1BAEB7088D456AA0A2ADE4E907E0FB /* Foundation.framework in Frameworks */,
+				60210E91A88CF94C20D2A22E419D4497 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		25F01C3CF21C9730FBE7071F65CDB036 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3F0991BD11F214AE772B346B6458E79 /* Foundation.framework in Frameworks */,
+				263A8433E6936FD6E52B37DBFAF30B66 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		476068985D8495A11F192E3B87DBD32D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D5325DB2E6D0DC794779446D6D6A7F0 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5DC25AA7986F2BF0AC82E6132A31A66D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				887D7E546D6837CC964318D1B0C842D9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7B1EE2097DF0321AF49F4B047B37565F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DD25C3475CCF344984424BD06C4AA439 /* CoreGraphics.framework in Frameworks */,
+				C30E5BDA69F08D912BF4DD29AE02A825 /* Foundation.framework in Frameworks */,
+				4298E40B036037EABFB07279A944B6F2 /* QuartzCore.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		919C6F4A0504C977BA80A393460FF266 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				87D69916190DA2EF4F814C14E0E259F4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E85776BF8ADFE444BE0017B252874E5D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D4C6144A2962FADF6DF3F04245167024 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		03C5C200A0787E300053CFA8F53CA094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3D9818C8519BEAE5E6BC822CA3C5C586 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F34A1DF612C011AD0F0FD52848A28BD /* FadingEdgesCollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				39D8D13BB4EDA24B6FE1FE99EF075006 /* FadingEdgesCollectionView.swift */,
+				69CB6E8EF4122C9EAE9AC6AA9EB6ABBB /* StyleKit.swift */,
+				262DE7732D177003B64A6C762635B182 /* UIButton+Closure.swift */,
+				AAD2D81265C9DE0B6352A9C8BF0ED787 /* Support Files */,
+			);
+			path = FadingEdgesCollectionView;
+			sourceTree = "<group>";
+		};
+		171F009AF88793C8E268336C4C6ECF16 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D04885437C287B7880BC7B06200D227 /* AHEasing.framework */,
+				25785A486097BD75FA12958557E1F8B7 /* FadingEdgesCollectionView.framework */,
+				41E4B275F413576A323E28A1709E6E43 /* HTGradientEasing_Fixed.framework */,
+				FD586AC9F7C69EC6B916B590A89981D5 /* Pods_AnsungBarnMon.framework */,
+				B39D180C9126C83274FF185B3D84EB55 /* Pods_AnsungBarnMon_AnsungBarnMonUITests.framework */,
+				0049D5289B0E9F8063C760F8D107F983 /* Pods_AnsungBarnMonTests.framework */,
+				319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */,
+				F5B6DF6E697EBFBE4E9E8FF07F37AA43 /* UIColor_CrossFade.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		29AC38C67598199CBCE0F5923B655F2C /* Pods-AnsungBarnMonTests */ = {
+			isa = PBXGroup;
+			children = (
+				8C33263EE678EF4583469EF4419A85A8 /* Pods-AnsungBarnMonTests.modulemap */,
+				FC2C8B762BA332367EF44AED752C4ED8 /* Pods-AnsungBarnMonTests-acknowledgements.markdown */,
+				3479F5C9E15340FF40059AEC4D783248 /* Pods-AnsungBarnMonTests-acknowledgements.plist */,
+				E9DF84141FBFE67AEEAC275807C152E6 /* Pods-AnsungBarnMonTests-dummy.m */,
+				9B33F1B3409075A1C2E466FA0DBB5CFC /* Pods-AnsungBarnMonTests-Info.plist */,
+				3F63F00D4939C9F38C3978208F773AA4 /* Pods-AnsungBarnMonTests-umbrella.h */,
+				385A88122AEF504A65328282D5C7BA79 /* Pods-AnsungBarnMonTests.debug.xcconfig */,
+				B84C67574BCDF03F42D7370715283CCE /* Pods-AnsungBarnMonTests.release.xcconfig */,
+			);
+			name = "Pods-AnsungBarnMonTests";
+			path = "Target Support Files/Pods-AnsungBarnMonTests";
+			sourceTree = "<group>";
+		};
+		3D9818C8519BEAE5E6BC822CA3C5C586 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				17E235F75DD77D76FF33E54BF765E5A7 /* CoreGraphics.framework */,
+				E5B74FE4A427E6F5B8C03910FB510CF9 /* Foundation.framework */,
+				4878BD1948D1714148371B05696DAB2F /* QuartzCore.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		76AD6166D860FF5339A634AAC767B532 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				62C7462EADAF8C25DA1F6047757CC4B2 /* HTGradientEasing-Fixed.modulemap */,
+				51D55AC4CF164291A7AC29ECC260C663 /* HTGradientEasing-Fixed-dummy.m */,
+				3EBB1E80215A00F6C3F70909F6EB29B8 /* HTGradientEasing-Fixed-Info.plist */,
+				3CC7BB71249BA617E08F23C6665AC734 /* HTGradientEasing-Fixed-prefix.pch */,
+				55DD6DA230135F81442026A629207F46 /* HTGradientEasing-Fixed-umbrella.h */,
+				A4FEC525F41454B847645CCE035C072D /* HTGradientEasing-Fixed.debug.xcconfig */,
+				FF09B86DD781288939216B8ED8341393 /* HTGradientEasing-Fixed.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/HTGradientEasing-Fixed";
+			sourceTree = "<group>";
+		};
+		93198E11049FABF0EDBD27B45A4D29A1 /* Pods-AnsungBarnMon-AnsungBarnMonUITests */ = {
+			isa = PBXGroup;
+			children = (
+				FDD2048CD226142927230BDF92CBD169 /* Pods-AnsungBarnMon-AnsungBarnMonUITests.modulemap */,
+				5AA4878D77351924766E1F3D8B62FA49 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.markdown */,
+				3F805F6DFE0A310840ADE5B6F91B443B /* Pods-AnsungBarnMon-AnsungBarnMonUITests-acknowledgements.plist */,
+				E4D5B6CE5D3BB9C43157F40CA0D9D03F /* Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m */,
+				8ADB6C85C24BB0CAFC34D8DB9386BFE0 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-frameworks.sh */,
+				B3E8C44BF69C64C7C7D4BD941AFD0D1B /* Pods-AnsungBarnMon-AnsungBarnMonUITests-Info.plist */,
+				15371CEEC1D71B86157831BED93D2A54 /* Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h */,
+				4C228D900190E07328AF09EEFDB3BD0B /* Pods-AnsungBarnMon-AnsungBarnMonUITests.debug.xcconfig */,
+				33EB81896BCAB84492E6BE8BA28C7C7F /* Pods-AnsungBarnMon-AnsungBarnMonUITests.release.xcconfig */,
+			);
+			name = "Pods-AnsungBarnMon-AnsungBarnMonUITests";
+			path = "Target Support Files/Pods-AnsungBarnMon-AnsungBarnMonUITests";
+			sourceTree = "<group>";
+		};
+		948F6DD251EB1BEBCECF92E9A1DF60B2 /* Pods-AnsungBarnMon */ = {
+			isa = PBXGroup;
+			children = (
+				AD88D3BF2F73FA312F3CFCE51DF254F4 /* Pods-AnsungBarnMon.modulemap */,
+				ABBF1C3A4F4C78983A581F7DB4F1A266 /* Pods-AnsungBarnMon-acknowledgements.markdown */,
+				BAFFD86860212B7EB18F38348FDC746A /* Pods-AnsungBarnMon-acknowledgements.plist */,
+				4DB8875ECBAC1FC83C72A65EFFE5CE60 /* Pods-AnsungBarnMon-dummy.m */,
+				B369A22890934E6C3A51303B54EEBF41 /* Pods-AnsungBarnMon-frameworks.sh */,
+				464C84C4B6E3EDAF9B723EC130C1749A /* Pods-AnsungBarnMon-Info.plist */,
+				04FA915D9A29B016194035B354A1FC79 /* Pods-AnsungBarnMon-umbrella.h */,
+				C0D92DBD1C1CF70C407F9A3E257EE37A /* Pods-AnsungBarnMon.debug.xcconfig */,
+				41EFA8D4EFA0394F712E888C0C047EE8 /* Pods-AnsungBarnMon.release.xcconfig */,
+			);
+			name = "Pods-AnsungBarnMon";
+			path = "Target Support Files/Pods-AnsungBarnMon";
+			sourceTree = "<group>";
+		};
+		AAD2D81265C9DE0B6352A9C8BF0ED787 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B7C508929405F42B87FA95D87AF06F30 /* FadingEdgesCollectionView.modulemap */,
+				540CAFEDED15CDCD9311E8D6FD97CCC2 /* FadingEdgesCollectionView-dummy.m */,
+				55BD81B34CC9DFD6C4B7EE7F6A03D8CD /* FadingEdgesCollectionView-Info.plist */,
+				5F569C143DE24003C3F8487BACECB50D /* FadingEdgesCollectionView-prefix.pch */,
+				BA74511FABB172B91225D473D3BC07BA /* FadingEdgesCollectionView-umbrella.h */,
+				6C3FAE844B94193AA7F3CE308DC134F5 /* FadingEdgesCollectionView.debug.xcconfig */,
+				83D64E51D3E242A6ABB7A61FD73F99D2 /* FadingEdgesCollectionView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/FadingEdgesCollectionView";
+			sourceTree = "<group>";
+		};
+		AD10553F6E4DB716D60CF38BBB607AA7 /* SideMenu */ = {
+			isa = PBXGroup;
+			children = (
+				C50FF4B91FE92E7184E4CBC39C87AB46 /* Deprecations.swift */,
+				967347A87BBB3D298ECF90BDE2CD2B73 /* Extensions.swift */,
+				0DDE269B8B94DAEFC94EA07A1C23D0E0 /* Initializable.swift */,
+				D739A38E5503FD088E60175EF7E30884 /* Print.swift */,
+				A1BA9322214F6BB3C28212CDB9FEC0CE /* Protected.swift */,
+				4436A483788D3A397358FBC551754E4D /* SideMenuAnimationController.swift */,
+				FA43709C6A154DEE68F210AED03C963F /* SideMenuInteractionController.swift */,
+				8C9B079B5192809D69823D438BF20D6B /* SideMenuManager.swift */,
+				55791F160770B7BA4C8591CAFA413C56 /* SideMenuNavigationController.swift */,
+				1B48012422CD95494840F4DC9FFA342B /* SideMenuPresentationController.swift */,
+				0D7790E8F6320C771BA68C088D584606 /* SideMenuPresentationStyle.swift */,
+				3F03EA9A3B4BF4911279CED9940EC321 /* SideMenuPushCoordinator.swift */,
+				F3C7FE4EFB3B9883AFBD13898FF1219E /* SideMenuTransitionController.swift */,
+				27C9E65FF41E49D20E269EAA4B1C207B /* UITableViewVibrantCell.swift */,
+				CFDA91E109C95C9CAFF072FB4EB37C8F /* Support Files */,
+			);
+			path = SideMenu;
+			sourceTree = "<group>";
+		};
+		B013B90249F57AB6CF7A8B828376CF7D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				382275B995717A9FC011BDE3D33B1CB4 /* AHEasing.modulemap */,
+				71CD58D7F1FFFA5AD7A5D1E0191ABC7E /* AHEasing-dummy.m */,
+				CF0712A71C0B239F0F2748D3C04E771E /* AHEasing-Info.plist */,
+				EA85C7D1014B4B8200CD36867C2A2F9C /* AHEasing-prefix.pch */,
+				1FD5915D5DE7FD30217DAE0EB112FBF8 /* AHEasing-umbrella.h */,
+				D40D7ECAA814230A49A26BEF515CAEAB /* AHEasing.debug.xcconfig */,
+				140C6719CD009A238E190EBD2DE25A2F /* AHEasing.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/AHEasing";
+			sourceTree = "<group>";
+		};
+		C10AA85F19B527B42FA2C9A6758E393C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D73176F4E581532B024AF62C6881104D /* AHEasing */,
+				0F34A1DF612C011AD0F0FD52848A28BD /* FadingEdgesCollectionView */,
+				CDD9FD08C9580DA46F50FCDE3CD677C1 /* HTGradientEasing-Fixed */,
+				AD10553F6E4DB716D60CF38BBB607AA7 /* SideMenu */,
+				FEB07F863238B90D9FB201097CD91F3D /* UIColor-CrossFade */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		C3F10619ADA72BDB50AE2F08739E023D /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				D7D4022B8014F4540C4E85D8992C3CAE /* UIColor-CrossFade.modulemap */,
+				560AC5CFF7C3A0D0548551A1B81DB89E /* UIColor-CrossFade-dummy.m */,
+				4E66EBD78968A1408D4386A7CD97BED3 /* UIColor-CrossFade-Info.plist */,
+				6933AD45E796AEFB499D2FA7ECF76067 /* UIColor-CrossFade-prefix.pch */,
+				D9D3EC7FC7E3485FD864EA88B0463E00 /* UIColor-CrossFade-umbrella.h */,
+				34D68EFF9105BDA472B61C04F77BE7C3 /* UIColor-CrossFade.debug.xcconfig */,
+				043D1C96795FA6C7158CE5FD271B4BA5 /* UIColor-CrossFade.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UIColor-CrossFade";
+			sourceTree = "<group>";
+		};
+		C67EF2F2F7F05F77EE5D4F84569D53EB /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				948F6DD251EB1BEBCECF92E9A1DF60B2 /* Pods-AnsungBarnMon */,
+				93198E11049FABF0EDBD27B45A4D29A1 /* Pods-AnsungBarnMon-AnsungBarnMonUITests */,
+				29AC38C67598199CBCE0F5923B655F2C /* Pods-AnsungBarnMonTests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		CDD9FD08C9580DA46F50FCDE3CD677C1 /* HTGradientEasing-Fixed */ = {
+			isa = PBXGroup;
+			children = (
+				00322D1F5BECCE31D54CDC81FF5522F9 /* CAGradientLayer+AHEasing.h */,
+				81D294BA11AF9D548F0046FCC62C1FF5 /* CAGradientLayer+AHEasing.m */,
+				76AD6166D860FF5339A634AAC767B532 /* Support Files */,
+			);
+			path = "HTGradientEasing-Fixed";
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				03C5C200A0787E300053CFA8F53CA094 /* Frameworks */,
+				C10AA85F19B527B42FA2C9A6758E393C /* Pods */,
+				171F009AF88793C8E268336C4C6ECF16 /* Products */,
+				C67EF2F2F7F05F77EE5D4F84569D53EB /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		CFDA91E109C95C9CAFF072FB4EB37C8F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				B36522925CC1045286EE71A28624923A /* SideMenu.modulemap */,
+				716B5B65649665D8DFB848B34DD03EF5 /* SideMenu-dummy.m */,
+				6AEAB006AEE69369E877EA399065471C /* SideMenu-Info.plist */,
+				E3A78201D11347C8019CA458256A4BCA /* SideMenu-prefix.pch */,
+				CD9DC01FC480FC97258C66C54389B228 /* SideMenu-umbrella.h */,
+				932B49E64CE849E30F5BB106DC8339B5 /* SideMenu.debug.xcconfig */,
+				20A4551CACE928A1B361A1BCB60852DD /* SideMenu.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SideMenu";
+			sourceTree = "<group>";
+		};
+		D73176F4E581532B024AF62C6881104D /* AHEasing */ = {
+			isa = PBXGroup;
+			children = (
+				28F20D2E68BD8A99B5AD8D15C9836775 /* CAKeyframeAnimation+AHEasing.h */,
+				7806686166DF81ADCBEDB1980DA40966 /* CAKeyframeAnimation+AHEasing.m */,
+				82549D90919FA84252E3235E35993923 /* easing.c */,
+				4C0B436495A45EDC4AAD700893C03111 /* easing.h */,
+				B013B90249F57AB6CF7A8B828376CF7D /* Support Files */,
+			);
+			path = AHEasing;
+			sourceTree = "<group>";
+		};
+		FEB07F863238B90D9FB201097CD91F3D /* UIColor-CrossFade */ = {
+			isa = PBXGroup;
+			children = (
+				347BA91334018DB7A0C8AF24D3A16422 /* UIColor+CrossFade.h */,
+				D6C84825BE2CA33B54ED2C1AD0F17716 /* UIColor+CrossFade.m */,
+				C3F10619ADA72BDB50AE2F08739E023D /* Support Files */,
+			);
+			path = "UIColor-CrossFade";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		29F516813D1E5F6266FEDD44DA281706 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				297B30A68547D5AE7E4C5CF5720DFDAA /* Pods-AnsungBarnMonTests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2FDBEBFCF2B356DF655899E0810A1DCF /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				09B92D5C327793BE561C647F32534872 /* CAGradientLayer+AHEasing.h in Headers */,
+				454B1374729CD4021D3883D5F4CD5DA7 /* HTGradientEasing-Fixed-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7334EFF94DB7818A9431D224DAD8D170 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0378F044F1CABAA4B4E896EFB29301B /* UIColor+CrossFade.h in Headers */,
+				16D72F94EF122B76123EF386BFA41F28 /* UIColor-CrossFade-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		808B3C78170DE39A17382B38756CAA06 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E56EEF71CC5AF0DA40228F2CA67B4BA0 /* SideMenu-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		893B1480C74B0B8DF3806DC87CED9D51 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				750B533D563B1513B8420F45643A7BCD /* Pods-AnsungBarnMon-AnsungBarnMonUITests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8D5C1C9681E2001A5851401E0F15DD36 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C02A1378BFBD81D909535D4ABE9129E /* AHEasing-umbrella.h in Headers */,
+				E9D295108CDA246F43886263CAC88C5F /* CAKeyframeAnimation+AHEasing.h in Headers */,
+				ACA86BBE8F135B81712F6DA3CD62BB88 /* easing.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F71981AFEEA728C23FED8E42F3048560 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				90C0908665A3E08404A4D23485B10C47 /* Pods-AnsungBarnMon-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F7C5349C7E7A16819AE73935504DB8C2 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				36D082E0B3543FA07C11C4A90672AC6C /* FadingEdgesCollectionView-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		160B1A546E3B4B424D68E7EA85C674D6 /* HTGradientEasing-Fixed */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8A0CBB85B9D147D49C6884628CBD8598 /* Build configuration list for PBXNativeTarget "HTGradientEasing-Fixed" */;
+			buildPhases = (
+				2FDBEBFCF2B356DF655899E0810A1DCF /* Headers */,
+				06CE6AE4F34D9E4AFB945D8A72FB6A3D /* Sources */,
+				7B1EE2097DF0321AF49F4B047B37565F /* Frameworks */,
+				3B6104BD86B1CEEE184C1D60E5A9C154 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8F0D15ADED0CF7FAE2EB188D527144DB /* PBXTargetDependency */,
+				1B2D409D334DEC7B76D6216ECCAB1F1F /* PBXTargetDependency */,
+			);
+			name = "HTGradientEasing-Fixed";
+			productName = HTGradientEasing_Fixed;
+			productReference = 41E4B275F413576A323E28A1709E6E43 /* HTGradientEasing_Fixed.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5DDC33279F54F637ADFE381798167206 /* Pods-AnsungBarnMon-AnsungBarnMonUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BE2E230075BC5783AEBC5195101ABE92 /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMon-AnsungBarnMonUITests" */;
+			buildPhases = (
+				893B1480C74B0B8DF3806DC87CED9D51 /* Headers */,
+				80C5591AF1C94CFAB31F1EA54F09CFEE /* Sources */,
+				476068985D8495A11F192E3B87DBD32D /* Frameworks */,
+				D22C89D73F5F50BA70ADCEDB948741E1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				A160034A72326DFF9AB305DF41F54C77 /* PBXTargetDependency */,
+				89A5CF2AE5FA520711F82E307681286B /* PBXTargetDependency */,
+				A064E2D5AF2E5CE8D04E49FCD8758367 /* PBXTargetDependency */,
+				1B841BB588F6A9C97AF7E39A3BD83F90 /* PBXTargetDependency */,
+				CF4A0E50823555F8CC61BC7D30A15697 /* PBXTargetDependency */,
+			);
+			name = "Pods-AnsungBarnMon-AnsungBarnMonUITests";
+			productName = Pods_AnsungBarnMon_AnsungBarnMonUITests;
+			productReference = B39D180C9126C83274FF185B3D84EB55 /* Pods_AnsungBarnMon_AnsungBarnMonUITests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5E10652417111BB558D63E3A674C70FC /* Pods-AnsungBarnMonTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D50D2CB36439A1E7011AAD3F11DE147D /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMonTests" */;
+			buildPhases = (
+				29F516813D1E5F6266FEDD44DA281706 /* Headers */,
+				8444F9C6EBF68935ABEB1B9416283A25 /* Sources */,
+				E85776BF8ADFE444BE0017B252874E5D /* Frameworks */,
+				59839E79CD51CD9B91900026B0939513 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				45E05C05C617AA2D1F110E2E2A7355FD /* PBXTargetDependency */,
+			);
+			name = "Pods-AnsungBarnMonTests";
+			productName = Pods_AnsungBarnMonTests;
+			productReference = 0049D5289B0E9F8063C760F8D107F983 /* Pods_AnsungBarnMonTests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		5F3F425F89F2F153B5B717C641FC0169 /* Pods-AnsungBarnMon */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 30C591E2898FEC44686B6D3F194CD302 /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMon" */;
+			buildPhases = (
+				F71981AFEEA728C23FED8E42F3048560 /* Headers */,
+				7574DFF1B28F59980A9825AD708C366F /* Sources */,
+				919C6F4A0504C977BA80A393460FF266 /* Frameworks */,
+				C74874F382654D68497CF0D4DBBC6D4D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C9958E1135D6355EF4E14DDA2E4DC00 /* PBXTargetDependency */,
+				31EF517E40C2BCD9F18C11AEF08350FF /* PBXTargetDependency */,
+				E5C9AB24EBFBBBCC2BD4F8F775DB238B /* PBXTargetDependency */,
+				1D00C222E21E7066FAEE253786740BB8 /* PBXTargetDependency */,
+				334F6B4490EF4A6C73DEC3D5225FB2CB /* PBXTargetDependency */,
+			);
+			name = "Pods-AnsungBarnMon";
+			productName = Pods_AnsungBarnMon;
+			productReference = FD586AC9F7C69EC6B916B590A89981D5 /* Pods_AnsungBarnMon.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		817E9C368FDE1F9A6D9F0D579BDD0C19 /* UIColor-CrossFade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E14A0490141AE43D64F1967880DB404E /* Build configuration list for PBXNativeTarget "UIColor-CrossFade" */;
+			buildPhases = (
+				7334EFF94DB7818A9431D224DAD8D170 /* Headers */,
+				7FA5F8C9E1222B647084EB2A514ABE9E /* Sources */,
+				1BC244534746BB20AEF0FF299BB3F667 /* Frameworks */,
+				2D5ED0AAA6E68121F227714C1176EB6D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "UIColor-CrossFade";
+			productName = UIColor_CrossFade;
+			productReference = F5B6DF6E697EBFBE4E9E8FF07F37AA43 /* UIColor_CrossFade.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		ACAC37713A98F013A2C6ED7D43982F54 /* FadingEdgesCollectionView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F18244DCB77041E966B610368159FE4 /* Build configuration list for PBXNativeTarget "FadingEdgesCollectionView" */;
+			buildPhases = (
+				F7C5349C7E7A16819AE73935504DB8C2 /* Headers */,
+				BFD5F9C375A71D16DA1152DEBE98A722 /* Sources */,
+				0A1CB2868B10C02507E2FB99960F80D1 /* Frameworks */,
+				1FCF22D70E12CB8322B0796E086F2996 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4F07A250C484D7D23EEE2672B8D0A5A5 /* PBXTargetDependency */,
+			);
+			name = FadingEdgesCollectionView;
+			productName = FadingEdgesCollectionView;
+			productReference = 25785A486097BD75FA12958557E1F8B7 /* FadingEdgesCollectionView.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C4E63BB43B7167D15C142EB405422643 /* Build configuration list for PBXNativeTarget "SideMenu" */;
+			buildPhases = (
+				808B3C78170DE39A17382B38756CAA06 /* Headers */,
+				67D65F22C5D7053A68ADB3533240B850 /* Sources */,
+				5DC25AA7986F2BF0AC82E6132A31A66D /* Frameworks */,
+				C35CA0EF3E2BEED48FF33721BDC0D000 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SideMenu;
+			productName = SideMenu;
+			productReference = 319D06AA0D1D0BA345459C039040A1ED /* SideMenu.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FBD8261B4F3FEF151DC13DA1A3A41049 /* AHEasing */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9C6FE8729EB2409DBACB65812A175846 /* Build configuration list for PBXNativeTarget "AHEasing" */;
+			buildPhases = (
+				8D5C1C9681E2001A5851401E0F15DD36 /* Headers */,
+				9DD20067B3F85C62EB8F6D9D8F836B13 /* Sources */,
+				25F01C3CF21C9730FBE7071F65CDB036 /* Frameworks */,
+				AF02F00961796DA0A9F9E709F4580F12 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AHEasing;
+			productName = AHEasing;
+			productReference = 3D04885437C287B7880BC7B06200D227 /* AHEasing.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 171F009AF88793C8E268336C4C6ECF16 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FBD8261B4F3FEF151DC13DA1A3A41049 /* AHEasing */,
+				ACAC37713A98F013A2C6ED7D43982F54 /* FadingEdgesCollectionView */,
+				160B1A546E3B4B424D68E7EA85C674D6 /* HTGradientEasing-Fixed */,
+				5F3F425F89F2F153B5B717C641FC0169 /* Pods-AnsungBarnMon */,
+				5DDC33279F54F637ADFE381798167206 /* Pods-AnsungBarnMon-AnsungBarnMonUITests */,
+				5E10652417111BB558D63E3A674C70FC /* Pods-AnsungBarnMonTests */,
+				C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */,
+				817E9C368FDE1F9A6D9F0D579BDD0C19 /* UIColor-CrossFade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FCF22D70E12CB8322B0796E086F2996 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2D5ED0AAA6E68121F227714C1176EB6D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3B6104BD86B1CEEE184C1D60E5A9C154 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		59839E79CD51CD9B91900026B0939513 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AF02F00961796DA0A9F9E709F4580F12 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C35CA0EF3E2BEED48FF33721BDC0D000 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		C74874F382654D68497CF0D4DBBC6D4D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D22C89D73F5F50BA70ADCEDB948741E1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		06CE6AE4F34D9E4AFB945D8A72FB6A3D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E69FEA5B038C2BAD79C52D60C9C59679 /* CAGradientLayer+AHEasing.m in Sources */,
+				67DE255C410CC18838AE4841B1034E97 /* HTGradientEasing-Fixed-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		67D65F22C5D7053A68ADB3533240B850 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3BE0026C39E4B360BBDA0D5C57DD25D /* Deprecations.swift in Sources */,
+				F28D439429A375B6D4FCD037ED317CD6 /* Extensions.swift in Sources */,
+				74106BDED4B8B2281DFE4BE5E109D847 /* Initializable.swift in Sources */,
+				BE79F903F87E7D5918C6414E6203743E /* Print.swift in Sources */,
+				DAD5950A205347FCDBD3751604472431 /* Protected.swift in Sources */,
+				1F0DDBBAF86A028D6D60A7E10B4D3634 /* SideMenu-dummy.m in Sources */,
+				B804587E525773FCA9698855B2C752DC /* SideMenuAnimationController.swift in Sources */,
+				E97C7A323474D0205E872AE7BC773650 /* SideMenuInteractionController.swift in Sources */,
+				E709C98B763E8065628D8E88715E0BF8 /* SideMenuManager.swift in Sources */,
+				9E9F19E0120EA3C46967C28E637F52C8 /* SideMenuNavigationController.swift in Sources */,
+				057B453F4AE14D10EA77D38FA1A0B8FB /* SideMenuPresentationController.swift in Sources */,
+				5587C359D9C8789950E7F6585C2292E7 /* SideMenuPresentationStyle.swift in Sources */,
+				E72252B09CC270B50217CA6AEABD620A /* SideMenuPushCoordinator.swift in Sources */,
+				3817F4830A10E51D20B72530EF6A56D2 /* SideMenuTransitionController.swift in Sources */,
+				BC9C2E663681EDDBFE985034DCC7AAAF /* UITableViewVibrantCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7574DFF1B28F59980A9825AD708C366F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2172554650AF005D5013A727EBE27709 /* Pods-AnsungBarnMon-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7FA5F8C9E1222B647084EB2A514ABE9E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E41321150B807EFDD331B2138765B52B /* UIColor+CrossFade.m in Sources */,
+				A279397EF0D9C9157CF5ADAD53F5FEFA /* UIColor-CrossFade-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		80C5591AF1C94CFAB31F1EA54F09CFEE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A484B6B38524E16DB4E8DF22EA56059D /* Pods-AnsungBarnMon-AnsungBarnMonUITests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8444F9C6EBF68935ABEB1B9416283A25 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				148D6263869DE7044BFADFA14E5AB60E /* Pods-AnsungBarnMonTests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9DD20067B3F85C62EB8F6D9D8F836B13 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A08CAA8D6DC42FF314904F3F5162EC64 /* AHEasing-dummy.m in Sources */,
+				AEDBEECCFD8BA89C53020586C6CCB8C5 /* CAKeyframeAnimation+AHEasing.m in Sources */,
+				4B6A5FF9C52C8AE7C79FC5AE5CAA9DC4 /* easing.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BFD5F9C375A71D16DA1152DEBE98A722 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				25B12FA4CE725789080EAE579D7E488C /* FadingEdgesCollectionView.swift in Sources */,
+				829FACCEFFD3DF3DA678DF5440765B91 /* FadingEdgesCollectionView-dummy.m in Sources */,
+				BD7485E08C2F6CB837BE341BEFA344DA /* StyleKit.swift in Sources */,
+				7BEF19546F7A440DAAFE13153282EEA0 /* UIButton+Closure.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1B2D409D334DEC7B76D6216ECCAB1F1F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-CrossFade";
+			target = 817E9C368FDE1F9A6D9F0D579BDD0C19 /* UIColor-CrossFade */;
+			targetProxy = 3A72697D848F33EB9C5B523A6800A06D /* PBXContainerItemProxy */;
+		};
+		1B841BB588F6A9C97AF7E39A3BD83F90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
+			targetProxy = 48D92B2BB0119F2D5919F0DA64666CA5 /* PBXContainerItemProxy */;
+		};
+		1D00C222E21E7066FAEE253786740BB8 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SideMenu;
+			target = C4A0A7D8591B67FB75E2E8D215E3735B /* SideMenu */;
+			targetProxy = EE6B9769095CBF56B8AE99827607A8D3 /* PBXContainerItemProxy */;
+		};
+		31EF517E40C2BCD9F18C11AEF08350FF /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FadingEdgesCollectionView;
+			target = ACAC37713A98F013A2C6ED7D43982F54 /* FadingEdgesCollectionView */;
+			targetProxy = 3DA6CA0BF7500627ACF370ECA2471FDE /* PBXContainerItemProxy */;
+		};
+		334F6B4490EF4A6C73DEC3D5225FB2CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-CrossFade";
+			target = 817E9C368FDE1F9A6D9F0D579BDD0C19 /* UIColor-CrossFade */;
+			targetProxy = BEBEE4DC87F396745DBFE4036E7170D7 /* PBXContainerItemProxy */;
+		};
+		45E05C05C617AA2D1F110E2E2A7355FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-AnsungBarnMon";
+			target = 5F3F425F89F2F153B5B717C641FC0169 /* Pods-AnsungBarnMon */;
+			targetProxy = A2E2584B04D3914481C241766A746BA0 /* PBXContainerItemProxy */;
+		};
+		4F07A250C484D7D23EEE2672B8D0A5A5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HTGradientEasing-Fixed";
+			target = 160B1A546E3B4B424D68E7EA85C674D6 /* HTGradientEasing-Fixed */;
+			targetProxy = 02C4D6A1A5AC733E09117E40B7DE4BF1 /* PBXContainerItemProxy */;
+		};
+		5C9958E1135D6355EF4E14DDA2E4DC00 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHEasing;
+			target = FBD8261B4F3FEF151DC13DA1A3A41049 /* AHEasing */;
+			targetProxy = 43859C9E2127D4C236CF798B2E3AB02C /* PBXContainerItemProxy */;
+		};
+		89A5CF2AE5FA520711F82E307681286B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = FadingEdgesCollectionView;
+			target = ACAC37713A98F013A2C6ED7D43982F54 /* FadingEdgesCollectionView */;
+			targetProxy = 0BD05CE0CBB4D30A211C28D648DBC6BF /* PBXContainerItemProxy */;
+		};
+		8F0D15ADED0CF7FAE2EB188D527144DB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHEasing;
+			target = FBD8261B4F3FEF151DC13DA1A3A41049 /* AHEasing */;
+			targetProxy = 11B149FF379368EAF1E00F1838AA0C95 /* PBXContainerItemProxy */;
+		};
+		A064E2D5AF2E5CE8D04E49FCD8758367 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HTGradientEasing-Fixed";
+			target = 160B1A546E3B4B424D68E7EA85C674D6 /* HTGradientEasing-Fixed */;
+			targetProxy = 4481113A01E43E5CD47BBA89D1B74F78 /* PBXContainerItemProxy */;
+		};
+		A160034A72326DFF9AB305DF41F54C77 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AHEasing;
+			target = FBD8261B4F3FEF151DC13DA1A3A41049 /* AHEasing */;
+			targetProxy = C0AFE80CF9E59CC5804FF8AB9EB1CDCD /* PBXContainerItemProxy */;
+		};
+		CF4A0E50823555F8CC61BC7D30A15697 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UIColor-CrossFade";
+			target = 817E9C368FDE1F9A6D9F0D579BDD0C19 /* UIColor-CrossFade */;
+			targetProxy = 85180303BC3E8E982797E6E033758840 /* PBXContainerItemProxy */;
+		};
+		E5C9AB24EBFBBBCC2BD4F8F775DB238B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "HTGradientEasing-Fixed";
+			target = 160B1A546E3B4B424D68E7EA85C674D6 /* HTGradientEasing-Fixed */;
+			targetProxy = 8F65181ECE69A9AB075047B6037A8254 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		46BFE2312ECDC35BEC02D94DC5B60F4C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 20A4551CACE928A1B361A1BCB60852DD /* SideMenu.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5340FE6E0E8CFA7D46FA46B37AD147AE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FF09B86DD781288939216B8ED8341393 /* HTGradientEasing-Fixed.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed.modulemap";
+				PRODUCT_MODULE_NAME = HTGradientEasing_Fixed;
+				PRODUCT_NAME = HTGradientEasing_Fixed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		5B45228934C1766FF2CB572A1AEF2220 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A4FEC525F41454B847645CCE035C072D /* HTGradientEasing-Fixed.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/HTGradientEasing-Fixed/HTGradientEasing-Fixed.modulemap";
+				PRODUCT_MODULE_NAME = HTGradientEasing_Fixed;
+				PRODUCT_NAME = HTGradientEasing_Fixed;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		6A83CE78CD176E87BE2A1C5DB183EEE6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 385A88122AEF504A65328282D5C7BA79 /* Pods-AnsungBarnMonTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMonTests/Pods-AnsungBarnMonTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMonTests/Pods-AnsungBarnMonTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7EEF24D9ABAF987523BB7AD0070281C4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6C3FAE844B94193AA7F3CE308DC134F5 /* FadingEdgesCollectionView.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = FadingEdgesCollectionView;
+				PRODUCT_NAME = FadingEdgesCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		80172BFA67739C8A375B54BE030AE525 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B84C67574BCDF03F42D7370715283CCE /* Pods-AnsungBarnMonTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMonTests/Pods-AnsungBarnMonTests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMonTests/Pods-AnsungBarnMonTests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8413E972A78955BD4E293671F4A4F358 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 140C6719CD009A238E190EBD2DE25A2F /* AHEasing.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AHEasing/AHEasing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHEasing/AHEasing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AHEasing/AHEasing.modulemap";
+				PRODUCT_MODULE_NAME = AHEasing;
+				PRODUCT_NAME = AHEasing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		8DE5143C03248BB6CD542DE3963D6F3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		930F65876B597CAD41876DE652112976 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 34D68EFF9105BDA472B61C04F77BE7C3 /* UIColor-CrossFade.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_CrossFade;
+				PRODUCT_NAME = UIColor_CrossFade;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9506B55F0E55364FDB76C985009B5049 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 043D1C96795FA6C7158CE5FD271B4BA5 /* UIColor-CrossFade.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/UIColor-CrossFade/UIColor-CrossFade.modulemap";
+				PRODUCT_MODULE_NAME = UIColor_CrossFade;
+				PRODUCT_NAME = UIColor_CrossFade;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9E0C37648D76E361234D07CA876D0358 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 932B49E64CE849E30F5BB106DC8339B5 /* SideMenu.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/SideMenu/SideMenu-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SideMenu/SideMenu-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/SideMenu/SideMenu.modulemap";
+				PRODUCT_MODULE_NAME = SideMenu;
+				PRODUCT_NAME = SideMenu;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		9E406C6AAF85E580207CD97B0044DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		9F0AD68D67059E8EF3142EB40BC2C71C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C0D92DBD1C1CF70C407F9A3E257EE37A /* Pods-AnsungBarnMon.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMon/Pods-AnsungBarnMon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMon/Pods-AnsungBarnMon.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A129F1D7861AB03D4302290F8380EC09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 83D64E51D3E242A6ABB7A61FD73F99D2 /* FadingEdgesCollectionView.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/FadingEdgesCollectionView/FadingEdgesCollectionView.modulemap";
+				PRODUCT_MODULE_NAME = FadingEdgesCollectionView;
+				PRODUCT_NAME = FadingEdgesCollectionView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A50335BF42140A11BFD0EC7388905D6A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 33EB81896BCAB84492E6BE8BA28C7C7F /* Pods-AnsungBarnMon-AnsungBarnMonUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMon-AnsungBarnMonUITests/Pods-AnsungBarnMon-AnsungBarnMonUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMon-AnsungBarnMonUITests/Pods-AnsungBarnMon-AnsungBarnMonUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B9EDDE091EBE7FC9F915F2D703E7A3F3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D40D7ECAA814230A49A26BEF515CAEAB /* AHEasing.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/AHEasing/AHEasing-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/AHEasing/AHEasing-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/AHEasing/AHEasing.modulemap";
+				PRODUCT_MODULE_NAME = AHEasing;
+				PRODUCT_NAME = AHEasing;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		C96F1702E60B7D4702806918C9B695B3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 41EFA8D4EFA0394F712E888C0C047EE8 /* Pods-AnsungBarnMon.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMon/Pods-AnsungBarnMon-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMon/Pods-AnsungBarnMon.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E9395CCBF91852CA86B421DD4478BD1D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4C228D900190E07328AF09EEFDB3BD0B /* Pods-AnsungBarnMon-AnsungBarnMonUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-AnsungBarnMon-AnsungBarnMonUITests/Pods-AnsungBarnMon-AnsungBarnMonUITests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-AnsungBarnMon-AnsungBarnMonUITests/Pods-AnsungBarnMon-AnsungBarnMonUITests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		30C591E2898FEC44686B6D3F194CD302 /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMon" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9F0AD68D67059E8EF3142EB40BC2C71C /* Debug */,
+				C96F1702E60B7D4702806918C9B695B3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8DE5143C03248BB6CD542DE3963D6F3A /* Debug */,
+				9E406C6AAF85E580207CD97B0044DEAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F18244DCB77041E966B610368159FE4 /* Build configuration list for PBXNativeTarget "FadingEdgesCollectionView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7EEF24D9ABAF987523BB7AD0070281C4 /* Debug */,
+				A129F1D7861AB03D4302290F8380EC09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8A0CBB85B9D147D49C6884628CBD8598 /* Build configuration list for PBXNativeTarget "HTGradientEasing-Fixed" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5B45228934C1766FF2CB572A1AEF2220 /* Debug */,
+				5340FE6E0E8CFA7D46FA46B37AD147AE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9C6FE8729EB2409DBACB65812A175846 /* Build configuration list for PBXNativeTarget "AHEasing" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B9EDDE091EBE7FC9F915F2D703E7A3F3 /* Debug */,
+				8413E972A78955BD4E293671F4A4F358 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		BE2E230075BC5783AEBC5195101ABE92 /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMon-AnsungBarnMonUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9395CCBF91852CA86B421DD4478BD1D /* Debug */,
+				A50335BF42140A11BFD0EC7388905D6A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C4E63BB43B7167D15C142EB405422643 /* Build configuration list for PBXNativeTarget "SideMenu" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E0C37648D76E361234D07CA876D0358 /* Debug */,
+				46BFE2312ECDC35BEC02D94DC5B60F4C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D50D2CB36439A1E7011AAD3F11DE147D /* Build configuration list for PBXNativeTarget "Pods-AnsungBarnMonTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				6A83CE78CD176E87BE2A1C5DB183EEE6 /* Debug */,
+				80172BFA67739C8A375B54BE030AE525 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E14A0490141AE43D64F1967880DB404E /* Build configuration list for PBXNativeTarget "UIColor-CrossFade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				930F65876B597CAD41876DE652112976 /* Debug */,
+				9506B55F0E55364FDB76C985009B5049 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

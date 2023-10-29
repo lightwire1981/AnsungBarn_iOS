@@ -1,0 +1,32 @@
+PODS:
+  - AHEasing (1.3.2)
+  - FadingEdgesCollectionView (0.1):
+    - HTGradientEasing-Fixed
+  - HTGradientEasing-Fixed (0.0.8):
+    - AHEasing
+    - UIColor-CrossFade
+  - SideMenu (6.5.0)
+  - UIColor-CrossFade (1.1.0)
+
+DEPENDENCIES:
+  - FadingEdgesCollectionView (~> 0.1)
+  - SideMenu
+
+SPEC REPOS:
+  trunk:
+    - AHEasing
+    - FadingEdgesCollectionView
+    - HTGradientEasing-Fixed
+    - SideMenu
+    - UIColor-CrossFade
+
+SPEC CHECKSUMS:
+  AHEasing: d6b07c11efaac53705f0773fa2464841ae356c01
+  FadingEdgesCollectionView: c6afab8a841784215b03e07cfa3b0dd0f1587e21
+  HTGradientEasing-Fixed: 5fd10fef450de9517cb49f013dfc340d86b9f0ec
+  SideMenu: f583187d21c5b1dd04c72002be544b555a2627a2
+  UIColor-CrossFade: 1e0dd1329ae45c6298f2b6b10d2bffc1e5af5d20
+
+PODFILE CHECKSUM: 9d136163513becaa64b90ad07f946e08d961717b
+
+COCOAPODS: 1.13.0

@@ -1,0 +1,6 @@
+framework module HTGradientEasing_Fixed {
+  umbrella header "HTGradientEasing-Fixed-umbrella.h"
+
+  export *
+  module * { export * }
+}
