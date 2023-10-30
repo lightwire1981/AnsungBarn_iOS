@@ -10,7 +10,7 @@ import UIKit
 @main
 class AppDelegate: UIResponder, UIApplicationDelegate {
     
-    var CurrentRegion = RegionInfo(regionGroup: "", regionName: "", regionTime: "", regionValue: "0")
+    var CurrentRegion = RegionInfo(regionGroup: "11", regionName: "", regionTime: "", regionValue: "0")
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.

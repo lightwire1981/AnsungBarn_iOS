@@ -23,6 +23,8 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var lBlCurrentRegionName: UILabel!
     @IBOutlet weak var iVwCurrentRegionStatus: UIImageView!
     
+    @IBOutlet weak var btnHiddenLogin: UIButton!
+    
     let blurEffect = UIBlurEffect(style: .dark)
     var currentModel = CurrentViewModel()
     var weekModel = DailyViewModel()
@@ -41,11 +43,22 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         weekListView.tag = 2
         
 //        setMainPage()
+        self.navigationController?.navigationBar.isHidden = true
         
         setCurrentData()
         setWeekData()
         
         updateTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
+        
+        btnHiddenLogin.addTarget(self, action: #selector(hiddenLogin(_:event:)), for: UIControl.Event.touchDownRepeat)
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        self.navigationController?.navigationBar.isHidden = true
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        updateTimer.invalidate()
     }
     
     func setMainPage() {
@@ -92,6 +105,26 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         setWeekData()
     }
     
+    @objc func hiddenLogin(_ sender: UIButton, event: UIEvent) {
+        let touch: UITouch = event.allTouches!.first!
+        if (touch.tapCount == 5) {
+            if let navigationController = self.navigationController {
+                if !(navigationController.topViewController?.description.contains("webViewController"))! {
+                    let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                    guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
+                            // 화면 전환 애니메이션 설정
+                    webViewController.userID = "system"
+                    webViewController.type = "login"
+    //                webViewController.modalTransitionStyle = .crossDissolve
+    //                // 전환된 화면이 보여지는 방법 설정 (fullScreen)
+    //                webViewController.modalPresentationStyle = .fullScreen
+                    navigationController.pushViewController(webViewController, animated: true)
+                    updateTimer.invalidate()
+                }
+            }
+        }
+    }
+    
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if scrollView.tag == 2 {
@@ -100,15 +133,25 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         }
     }
     
-    
-    @IBOutlet weak var valueLabel: UILabel!
-    
-//    @IBOutlet weak var inputField: UITextField!
-    
-    @IBAction func showValue(_ sender: Any) {
-//        let name = inputField.text!
-//        valueLabel.text = "Hello, \(name)"
+    @IBAction func btnPrivacy(_ sender: Any) {
+        
+        if let navigationController = self.navigationController {
+            if !(navigationController.topViewController?.description.contains("webViewController"))! {
+                let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
+                        // 화면 전환 애니메이션 설정
+                webViewController.type = "privacy"
+//                webViewController.modalTransitionStyle = .crossDissolve
+//                // 전환된 화면이 보여지는 방법 설정 (fullScreen)
+//                webViewController.modalPresentationStyle = .fullScreen
+                navigationController.pushViewController(webViewController, animated: true)
+                updateTimer.invalidate()
+            }
+        }
     }
+    
+    
+
     
     @IBOutlet var mainView: UIView!
     func addBlur() {
@@ -242,11 +285,6 @@ class CellDailyItem: UITableViewCell {
         iVwDayStatus.image = UIImage(named: Util().convertImage(value: info.value))
     }
 }
-
-
-
-
-
 
 
 var currentInfoList: [CurrentInfo] = []
