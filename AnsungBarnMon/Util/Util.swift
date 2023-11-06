@@ -20,6 +20,18 @@ class Util {
         return ""
     }
     
+    func saveUserID(userID: String) {
+        UserDefaults.standard.set(userID, forKey: "USER_ID")
+    }
+    
+    func loadUserID() -> String {
+        if let value = UserDefaults.standard.string(forKey: "USER_ID") {
+            print("@@@@@@@@@@@@ id : ", value)
+            return value
+        }
+        return ""
+    }
+    
     
     func convertStatus(value: String) -> String {
         var status = "알수없음"

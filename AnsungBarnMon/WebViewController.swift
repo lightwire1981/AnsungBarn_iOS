@@ -27,7 +27,7 @@ class WebViewController: UIViewController {
         self.navigationController?.navigationBar.isHidden = false
         
         let preferences = WKPreferences()
-        preferences.javaScriptEnabled = true
+//        preferences.javaScriptEnabled = true
         preferences.javaScriptCanOpenWindowsAutomatically = true
         
         let contentController = WKUserContentController()
@@ -35,6 +35,11 @@ class WebViewController: UIViewController {
         
         let configuration = WKWebViewConfiguration()
         configuration.preferences = preferences
+        if #available(iOS 14.0, *) {
+            configuration.defaultWebpagePreferences.allowsContentJavaScript = true
+        } else {
+            configuration.preferences.javaScriptEnabled = true
+        }
         configuration.userContentController = contentController
         
         let targetUrl: String!
@@ -43,17 +48,22 @@ class WebViewController: UIViewController {
         case "privacy":
             targetUrl = "https://www.anseong.go.kr/portal/contents.do?mId=0604000000"
         case "login":
-            let sessionData: [String: Any] = [
-                "key": userID as Any
-            ]
-            if JSONSerialization.isValidJSONObject(sessionData),
-               let data = try?JSONSerialization.data(withJSONObject: sessionData, options: []),
-               let param = String(data: data, encoding: .utf8) {
-                let script = WKUserScript(
-                    source: "Object.assign(window.sessionStorage, \(param));", injectionTime: .atDocumentStart, forMainFrameOnly: true
-                    )
-                configuration.userContentController.addUserScript(script)
-            }
+//            let sessionData: [String: Any] = [
+//                "key": userID as Any
+//            ]
+//            if JSONSerialization.isValidJSONObject(sessionData),
+//               let data = try?JSONSerialization.data(withJSONObject: sessionData, options: []),
+//               let param = String(data: data, encoding: .utf8) {
+//                let script = WKUserScript(
+//                    source: "Object.assign(window.sessionStorage, \(param));", injectionTime: .atDocumentStart, forMainFrameOnly: true
+//                    )
+//                configuration.userContentController.addUserScript(script)
+//            }
+            let script = WKUserScript(
+                source: "window.sessionStorage.setItem('key', '"+userID+"');", injectionTime: .atDocumentStart, forMainFrameOnly: true
+                )
+            configuration.userContentController.addUserScript(script)
+
             targetUrl = "https://livestock.kr"
         default:
             targetUrl = ""

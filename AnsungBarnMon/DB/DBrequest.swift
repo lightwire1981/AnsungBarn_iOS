@@ -59,6 +59,18 @@ struct WeekData: Codable {
     let week_level_day_before_7: String
 }
 
+struct PhoneResponse: Codable {
+    let msg: String
+    let result: UserID?
+}
+
+struct UserID: Codable {
+    let dt_op_user_id: String
+}
+struct NotID: Codable {
+    let msg: String
+}
+
 /**
     Non Body
  */
@@ -99,6 +111,14 @@ func requestGet(type: String, url: String, completionHandler: @escaping (Bool, A
                 return
             }
             completionHandler(true, output.list)
+        case "user":
+            
+            guard let output = try? JSONDecoder().decode(PhoneResponse.self, from: data) else {
+                print("Error: JSON Data Parsing failed")
+                return
+            }
+            completionHandler(true, output)
+            
         default:
             return
         }

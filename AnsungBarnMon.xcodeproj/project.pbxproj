@@ -21,9 +21,11 @@
 		4313DFA72AE902C500FC2155 /* MenuStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4313DFA62AE902C500FC2155 /* MenuStyle.swift */; };
 		4387A6B02AEAA3B400CD65B9 /* DBrequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387A6AF2AEAA3B400CD65B9 /* DBrequest.swift */; };
 		4387A6B32AEAC00F00CD65B9 /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387A6B22AEAC00F00CD65B9 /* Util.swift */; };
-		4387A6B52AEADF7700CD65B9 /* DBTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4387A6B42AEADF7700CD65B9 /* DBTest.swift */; };
+		43B177AD2AF1618800DB17C2 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B177AC2AF1618800DB17C2 /* Reachability.swift */; };
 		43DAF8802AF005EA0036E8B5 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 43DAF87F2AF005EA0036E8B5 /* WebKit.framework */; };
 		43DAF8842AF007AE0036E8B5 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DAF8832AF007AE0036E8B5 /* WebViewController.swift */; };
+		43DAF8872AF0946D0036E8B5 /* PopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43DAF8862AF0946D0036E8B5 /* PopupViewController.swift */; };
+		43DAF8892AF094B40036E8B5 /* Popup.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43DAF8882AF094B40036E8B5 /* Popup.storyboard */; };
 		43F8D0732AD50C7D00E931C0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F8D0722AD50C7D00E931C0 /* AppDelegate.swift */; };
 		43F8D0752AD50C7E00E931C0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F8D0742AD50C7E00E931C0 /* SceneDelegate.swift */; };
 		43F8D0772AD50C7E00E931C0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43F8D0762AD50C7E00E931C0 /* ViewController.swift */; };
@@ -74,9 +76,12 @@
 		43582CB92ADBA2DE0016A187 /* Base */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Base; path = "Base.lproj/icon-spot.png"; sourceTree = "<group>"; };
 		4387A6AF2AEAA3B400CD65B9 /* DBrequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBrequest.swift; sourceTree = "<group>"; };
 		4387A6B22AEAC00F00CD65B9 /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
-		4387A6B42AEADF7700CD65B9 /* DBTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DBTest.swift; sourceTree = "<group>"; };
+		438871412AF2A9CD0092BF97 /* SideMenu.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SideMenu.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		43B177AC2AF1618800DB17C2 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		43DAF87F2AF005EA0036E8B5 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		43DAF8832AF007AE0036E8B5 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
+		43DAF8862AF0946D0036E8B5 /* PopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopupViewController.swift; sourceTree = "<group>"; };
+		43DAF8882AF094B40036E8B5 /* Popup.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Popup.storyboard; sourceTree = "<group>"; };
 		43F8D06F2AD50C7D00E931C0 /* AnsungBarnMon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnsungBarnMon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		43F8D0722AD50C7D00E931C0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		43F8D0742AD50C7E00E931C0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +150,6 @@
 			isa = PBXGroup;
 			children = (
 				4387A6AF2AEAA3B400CD65B9 /* DBrequest.swift */,
-				4387A6B42AEADF7700CD65B9 /* DBTest.swift */,
 			);
 			path = DB;
 			sourceTree = "<group>";
@@ -154,8 +158,18 @@
 			isa = PBXGroup;
 			children = (
 				4387A6B22AEAC00F00CD65B9 /* Util.swift */,
+				43B177AC2AF1618800DB17C2 /* Reachability.swift */,
 			);
 			path = Util;
+			sourceTree = "<group>";
+		};
+		43DAF8852AF093F50036E8B5 /* Popup */ = {
+			isa = PBXGroup;
+			children = (
+				43DAF8862AF0946D0036E8B5 /* PopupViewController.swift */,
+				43DAF8882AF094B40036E8B5 /* Popup.storyboard */,
+			);
+			path = Popup;
 			sourceTree = "<group>";
 		};
 		43F8D0662AD50C7D00E931C0 = {
@@ -183,6 +197,7 @@
 		43F8D0712AD50C7D00E931C0 /* AnsungBarnMon */ = {
 			isa = PBXGroup;
 			children = (
+				43DAF8852AF093F50036E8B5 /* Popup */,
 				4387A6B12AEABFED00CD65B9 /* Util */,
 				4387A6AE2AEAA39700CD65B9 /* DB */,
 				43F8D0722AD50C7D00E931C0 /* AppDelegate.swift */,
@@ -235,6 +250,7 @@
 		A28B3D14A029A1D23C9627CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				438871412AF2A9CD0092BF97 /* SideMenu.framework */,
 				43DAF87F2AF005EA0036E8B5 /* WebKit.framework */,
 				E98A36207D3A51A36F6A6F4E /* Pods_AnsungBarnMon.framework */,
 				3F039D66E870B65CA56196A9 /* Pods_AnsungBarnMon_AnsungBarnMonUITests.framework */,
@@ -355,6 +371,7 @@
 				43136D7A2AE4D7D6003B9592 /* intro.png in Resources */,
 				43F8D07F2AD50C7E00E931C0 /* LaunchScreen.storyboard in Resources */,
 				43136D792AE4D7D6003B9592 /* icon-spot.png in Resources */,
+				43DAF8892AF094B40036E8B5 /* Popup.storyboard in Resources */,
 				43136D7D2AE4D7D6003B9592 /* emoticon2.png in Resources */,
 				43136D7B2AE4D7D6003B9592 /* emoticon4.png in Resources */,
 				43136D782AE4D7D6003B9592 /* menu_btn.png in Resources */,
@@ -490,7 +507,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				43DAF8872AF0946D0036E8B5 /* PopupViewController.swift in Sources */,
 				43F8D0772AD50C7E00E931C0 /* ViewController.swift in Sources */,
+				43B177AD2AF1618800DB17C2 /* Reachability.swift in Sources */,
 				43DAF8842AF007AE0036E8B5 /* WebViewController.swift in Sources */,
 				4387A6B32AEAC00F00CD65B9 /* Util.swift in Sources */,
 				4387A6B02AEAA3B400CD65B9 /* DBrequest.swift in Sources */,
@@ -500,7 +519,6 @@
 				43F8D0732AD50C7D00E931C0 /* AppDelegate.swift in Sources */,
 				43136D822AE780FD003B9592 /* data.swift in Sources */,
 				43F8D0752AD50C7E00E931C0 /* SceneDelegate.swift in Sources */,
-				4387A6B52AEADF7700CD65B9 /* DBTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -653,8 +671,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = Z3K2RKSDB6;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -672,11 +692,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -716,8 +737,10 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = Z3K2RKSDB6;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
@@ -729,7 +752,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
@@ -746,27 +770,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = USUDJ95ZA7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z3K2RKSDB6;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnsungBarnMon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AnsungBarnMon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.senko.AnsungBarnMon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = AnsungBarnMon;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -776,27 +809,36 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = USUDJ95ZA7;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				CURRENT_PROJECT_VERSION = 4;
+				"DEVELOPMENT_TEAM[sdk=iphoneos*]" = Z3K2RKSDB6;
+				ENABLE_ON_DEMAND_RESOURCES = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = AnsungBarnMon/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = AnsungBarnMon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = UIInterfaceOrientationPortrait;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.3;
+				ONLY_ACTIVE_ARCH = YES;
 				PRODUCT_BUNDLE_IDENTIFIER = kr.co.senko.AnsungBarnMon;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=iphoneos*]" = "AnsungBarnMon Ad Hoc";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -886,7 +928,7 @@
 				43F8D0982AD50C7E00E931C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		43F8D0992AD50C7E00E931C0 /* Build configuration list for PBXNativeTarget "AnsungBarnMon" */ = {
 			isa = XCConfigurationList;
@@ -895,7 +937,7 @@
 				43F8D09B2AD50C7E00E931C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		43F8D09C2AD50C7E00E931C0 /* Build configuration list for PBXNativeTarget "AnsungBarnMonTests" */ = {
 			isa = XCConfigurationList;
@@ -904,7 +946,7 @@
 				43F8D09E2AD50C7E00E931C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 		43F8D09F2AD50C7E00E931C0 /* Build configuration list for PBXNativeTarget "AnsungBarnMonUITests" */ = {
 			isa = XCConfigurationList;
@@ -913,7 +955,7 @@
 				43F8D0A12AD50C7E00E931C0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
+			defaultConfigurationName = Debug;
 		};
 /* End XCConfigurationList section */
 	};

@@ -13,6 +13,7 @@ import FadingEdgesCollectionView
 var currentRegion = UIApplication.shared.delegate as? AppDelegate
 var CurrentDataList: [CurrentData] = []
 var WeekDataList: [WeekData] = []
+var btnPosition = false
 
 class ViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var todayListView: FadingEdgesCollectionView!
@@ -23,17 +24,30 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     @IBOutlet weak var lBlCurrentRegionName: UILabel!
     @IBOutlet weak var iVwCurrentRegionStatus: UIImageView!
     
+    @IBOutlet weak var footerView: UIView!
+    
     @IBOutlet weak var btnHiddenLogin: UIButton!
     
     let blurEffect = UIBlurEffect(style: .dark)
     var currentModel = CurrentViewModel()
     var weekModel = DailyViewModel()
     
+    
     var updateTimer = Timer()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        guard Reachability.networkConnected() else {
+                    let alert = UIAlertController(title: "NetworkError", message: "네트워크가 연결되어있지 않습니다.", preferredStyle: .alert)
+                    let okAction = UIAlertAction(title: "종료", style: .default) { (action) in
+                        exit(0)
+                    }
+                    alert.addAction(okAction)
+                    self.present(alert, animated: true, completion: nil)
+                    return
+                }
 
         todayListView.tag = 1
         todayListView.showArrows = false
@@ -42,13 +56,13 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         
         weekListView.tag = 2
         
-//        setMainPage()
+        setMainPage()
         self.navigationController?.navigationBar.isHidden = true
         
         setCurrentData()
         setWeekData()
         
-        updateTimer = Timer.scheduledTimer(timeInterval: 10, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
+        updateTimer = Timer.scheduledTimer(timeInterval: 60, target: self, selector: #selector(updateInfo), userInfo: nil, repeats: true)
         
         btnHiddenLogin.addTarget(self, action: #selector(hiddenLogin(_:event:)), for: UIControl.Event.touchDownRepeat)
     }
@@ -58,11 +72,17 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        updateTimer.invalidate()
+        
     }
+    @IBOutlet weak var btnPrivacy: UIButton!
     
     func setMainPage() {
-
+        let id = Util().loadUserID()
+        if id == "" {
+            
+        } else {
+            setLoginButton()
+        }
     }
 
     func setCurrentData() {
@@ -99,32 +119,97 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         })
     }
     
+    func setLoginButton() {
+        if !btnPosition {
+            btnPosition = true
+            btnPrivacy.layer.position.x -= 120
+        }
+        
+        let btnLogin = UIButton(frame: CGRect(x: self.view.frame.size.width-130, y: self.view.frame.size.height-self.footerView.frame.height, width: 130, height: self.footerView.frame.height))
+        btnLogin.setTitleColor(.white, for: .normal)
+        btnLogin.setTitleColor(.gray, for: .highlighted)
+        btnLogin.setTitle("농장주 로그인", for: .normal)
+        btnLogin.titleLabel?.font = .systemFont(ofSize: 15.0, weight: .bold)
+        btnLogin.backgroundColor = UIColor(hexCode: "EA5F3C", alpha: 1.0)
+        btnLogin.addTarget(self, action: #selector(login), for: .touchUpInside)
+
+        self.view.addSubview(btnLogin)
+    }
+    
     @objc func updateInfo() {
         print("<<<<<< Data Updated")
         setCurrentData()
         setWeekData()
+        Toast(message: "정보가 업데이트 되었습니다")
     }
     
     @objc func hiddenLogin(_ sender: UIButton, event: UIEvent) {
         let touch: UITouch = event.allTouches!.first!
         if (touch.tapCount == 5) {
-            if let navigationController = self.navigationController {
-                if !(navigationController.topViewController?.description.contains("webViewController"))! {
-                    let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                    guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
-                            // 화면 전환 애니메이션 설정
-                    webViewController.userID = "system"
-                    webViewController.type = "login"
-    //                webViewController.modalTransitionStyle = .crossDissolve
-    //                // 전환된 화면이 보여지는 방법 설정 (fullScreen)
-    //                webViewController.modalPresentationStyle = .fullScreen
-                    navigationController.pushViewController(webViewController, animated: true)
-                    updateTimer.invalidate()
+            
+            let id = Util().loadUserID()
+
+            if id == "" {
+                let storyBoard = UIStoryboard.init(name: "Popup", bundle: nil)    // Popup 스토리보드를 가져옴
+                let popupVC = storyBoard.instantiateViewController(identifier: "PopupVC")as! PopupViewController  // identifier는 뷰컨트롤러의 storyboard ID.
+                
+                popupVC.modalPresentationStyle = .overCurrentContext    //  투명도가 있으면 투명도에 맞춰서 나오게 해주는 코드(뒤에있는 배경이 보일 수 있게)
+                
+                popupVC.temp = {
+                    let id = Util().loadUserID()
+                    if id == "" {
+                        let alert = UIAlertController(title:"아이디 확인 불가", message: "해당하는 아이디가 없습니다", preferredStyle: .alert)
+                        let okAction = UIAlertAction(title: "확인", style: .default)
+                        alert.addAction(okAction)
+                        self.present(alert, animated: false, completion: nil)
+                    } else {
+                        self.setLoginButton()
+                        if self.navigationController != nil {
+                            if !(self.navigationController?.topViewController?.description.contains("webViewController"))! {
+                                let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                                guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
+                                // 화면 전환 애니메이션 설정
+                                webViewController.userID = id
+                                webViewController.type = "login"
+                                self.navigationController?.pushViewController(webViewController, animated: true)
+                                
+                            }
+                        }
+                    }
+                    
                 }
+                self.present(popupVC, animated: false, completion: nil)
+            }
+//            } else {
+//                
+//                if let navigationController = self.navigationController {
+//                    if !(self.navigationController?.topViewController?.description.contains("webViewController"))! {
+//                        let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+//                        guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
+//                        // 화면 전환 애니메이션 설정
+//                        webViewController.userID = id
+//                        webViewController.type = "login"
+//                        self.navigationController?.pushViewController(webViewController, animated: true)
+//                        
+//                    }
+//                }
+//            }
+        }
+    }
+    @objc func login() {
+        let id = Util().loadUserID()
+        if self.navigationController != nil {
+            if !(self.navigationController?.topViewController?.description.contains("webViewController"))! {
+                let _: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+                guard let webViewController = self.storyboard?.instantiateViewController(withIdentifier: "webViewController") as? WebViewController else { return }
+                // 화면 전환 애니메이션 설정
+                webViewController.userID = id
+                webViewController.type = "login"
+                self.navigationController?.pushViewController(webViewController, animated: true)
+                
             }
         }
     }
-    
 
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
         if scrollView.tag == 2 {
@@ -364,5 +449,46 @@ class DailyViewModel {
     
     func dailyInfoRow(at index: Int) -> [DailyInfo] {
         return weeklyInfoList[index]
+    }
+}
+
+extension ViewController {
+    func Toast(message: String, font: UIFont = UIFont.systemFont(ofSize: 14.0)) {
+        let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-100, width: 200, height: 35))
+        toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
+        toastLabel.textColor = UIColor.white
+        toastLabel.font = font
+        toastLabel.textAlignment = .center;
+        toastLabel.text = message
+        toastLabel.alpha = 1.0
+        toastLabel.layer.cornerRadius = 10;
+        toastLabel.clipsToBounds  =  true
+        self.view.addSubview(toastLabel)
+        UIView.animate(withDuration: 3.0, delay: 0.1, options: .curveEaseOut, animations: {
+            toastLabel.alpha = 0.0
+        }, completion: {(isCompleted) in
+            toastLabel.removeFromSuperview()
+        })
+    }
+}
+
+extension UIColor {
+    
+    convenience init(hexCode: String, alpha: CGFloat = 1.0) {
+        var hexFormatted: String = hexCode.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines).uppercased()
+        
+        if hexFormatted.hasPrefix("#") {
+            hexFormatted = String(hexFormatted.dropFirst())
+        }
+        
+        assert(hexFormatted.count == 6, "Invalid hex code used.")
+        
+        var rgbValue: UInt64 = 0
+        Scanner(string: hexFormatted).scanHexInt64(&rgbValue)
+        
+        self.init(red: CGFloat((rgbValue & 0xFF0000) >> 16) / 255.0,
+                  green: CGFloat((rgbValue & 0x00FF00) >> 8) / 255.0,
+                  blue: CGFloat(rgbValue & 0x0000FF) / 255.0,
+                  alpha: alpha)
     }
 }
