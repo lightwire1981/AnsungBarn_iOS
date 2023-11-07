@@ -15,8 +15,9 @@ var CurrentDataList: [CurrentData] = []
 var WeekDataList: [WeekData] = []
 var btnPosition = false
 
+
 class ViewController: UIViewController, UICollectionViewDelegate {
-    @IBOutlet weak var todayListView: FadingEdgesCollectionView!
+    @IBOutlet weak var todayListView: UICollectionView!
     @IBOutlet weak var weekListView: UICollectionView!
     @IBOutlet weak var weekListPageControl: UIPageControl!
     @IBOutlet weak var lBlCurrentRegionTime: UILabel!
@@ -32,7 +33,7 @@ class ViewController: UIViewController, UICollectionViewDelegate {
     var currentModel = CurrentViewModel()
     var weekModel = DailyViewModel()
     
-    
+    var gradient = CAGradientLayer()
     var updateTimer = Timer()
     
     override func viewDidLoad() {
@@ -50,9 +51,9 @@ class ViewController: UIViewController, UICollectionViewDelegate {
                 }
 
         todayListView.tag = 1
-        todayListView.showArrows = false
-        todayListView.showGradients = true
-        todayListView.gradientLength = 100.0
+//        todayListView.showArrows = false
+//        todayListView.showGradients = true
+//        todayListView.gradientLength = 100.0
         
         weekListView.tag = 2
         
@@ -83,6 +84,29 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         } else {
             setLoginButton()
         }
+//        
+//        gradient.colors = [
+//            UIColor.clear.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.white.cgColor,
+//            UIColor.clear.cgColor
+//        ]
+//        gradient.startPoint = CGPoint(x: 0, y: 0.5)
+//        gradient.endPoint = CGPoint(x: 1, y: 0.5)
+//        gradient.delegate = self
+//        todayListView.layer.mask = gradient
+        gradient.colors = [
+            UIColor.white.cgColor,
+            UIColor.clear.cgColor
+        ]
+        gradient.startPoint = CGPoint(x: 0.9, y: 0.5)
+        gradient.endPoint = CGPoint(x: 1, y: 0.5)
+        gradient.delegate = self
+        todayListView.layer.mask = gradient
     }
 
     func setCurrentData() {
@@ -210,11 +234,84 @@ class ViewController: UIViewController, UICollectionViewDelegate {
             }
         }
     }
-
+    
+    override func viewDidLayoutSubviews() {
+        super.viewDidLayoutSubviews()
+        
+        updateGradientFrame()
+    }
+    func scrollViewDidScroll(_ scrollView: UIScrollView) {
+        
+        if scrollView.tag == 1 {
+            updateGradientFrame()
+        }
+    }
+    
+    func updateGradientFrame() {
+        gradient.frame = CGRect(
+            x: todayListView.contentOffset.x,
+            y: 0.5,
+            width: todayListView.bounds.width,
+            height: todayListView.bounds.height
+            )
+    }
+    
+    func setGradients(index: Int) {
+        let count = 21
+        gradient.removeFromSuperlayer()
+        switch index {
+        case 0:
+            
+            gradient.colors = [
+                UIColor.white.cgColor,
+                UIColor.clear.cgColor
+            ]
+            gradient.startPoint = CGPoint(x: 0.9, y: 0.5)
+            gradient.endPoint = CGPoint(x: 1, y: 0.5)
+            gradient.delegate = self
+            todayListView.layer.mask = gradient
+        case count:
+            gradient.colors = [
+                UIColor.clear.cgColor,
+                UIColor.white.cgColor
+            ]
+            gradient.startPoint = CGPoint(x: 0, y: 0.5)
+            gradient.endPoint = CGPoint(x: 0.1, y: 0.5)
+            gradient.delegate = self
+            todayListView.layer.mask = gradient
+        default:
+            gradient.colors = [
+                UIColor.clear.cgColor,
+                UIColor.white.cgColor,
+                UIColor.white.cgColor,
+                UIColor.white.cgColor,
+                UIColor.white.cgColor,
+                UIColor.white.cgColor,
+                UIColor.white.cgColor,
+                UIColor.clear.cgColor
+            ]
+            gradient.startPoint = CGPoint(x: 0, y: 0.5)
+            gradient.endPoint = CGPoint(x: 1, y: 0.5)
+            gradient.delegate = self
+            todayListView.layer.mask = gradient
+        }
+    }
+    
+    func scrollViewWillBeginDragging(_ scrollView: UIScrollView) {
+        
+    }
+    
     func scrollViewWillEndDragging(_ scrollView: UIScrollView, withVelocity velocity: CGPoint, targetContentOffset: UnsafeMutablePointer<CGPoint>) {
-        if scrollView.tag == 2 {
+        switch scrollView.tag {
+        case 1:
+            let page = Int(targetContentOffset.pointee.x / (60))
+            setGradients(index: page)
+        case 2:
             let page = Int(targetContentOffset.pointee.x / self.weekListView.frame.width)
             weekListPageControl.currentPage = page
+            
+        default: break
+            
         }
     }
     
@@ -254,6 +351,8 @@ class ViewController: UIViewController, UICollectionViewDelegate {
         }
     }
 }
+
+
 
 extension ViewController: UICollectionViewDataSource {
     
@@ -452,7 +551,7 @@ class DailyViewModel {
     }
 }
 
-extension ViewController {
+extension ViewController: CALayerDelegate {
     func Toast(message: String, font: UIFont = UIFont.systemFont(ofSize: 14.0)) {
         let toastLabel = UILabel(frame: CGRect(x: self.view.frame.size.width/2 - 100, y: self.view.frame.size.height-100, width: 200, height: 35))
         toastLabel.backgroundColor = UIColor.black.withAlphaComponent(0.6)
@@ -469,6 +568,10 @@ extension ViewController {
         }, completion: {(isCompleted) in
             toastLabel.removeFromSuperview()
         })
+    }
+    
+    func action(for layer: CALayer, forKey event: String) -> CAAction? {
+        return NSNull()
     }
 }
 
